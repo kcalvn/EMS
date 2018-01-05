@@ -27,12 +27,24 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let center: NotificationCenter = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
         center.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.singleTap(_:)))
+        tapGesture.numberOfTapsRequired = 1
+        tapGesture.numberOfTouchesRequired = 1
+        contentView.addGestureRecognizer(tapGesture)
+        contentView.isUserInteractionEnabled = true
+  
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardDidShow, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
+    @objc func singleTap(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     
     @objc func keyboardWillShow(notification: Notification) {
       
@@ -55,11 +67,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        logUserIn()
         return true
     }
 
-
     @IBAction func signInAction(_ sender: UIButton) {
+        view.endEditing(true)
+        logUserIn()
     }
     
     @IBAction func forgotPasswordAction(_ sender: UIButton) {
@@ -88,5 +102,34 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 self.view.frame = frame
             })
         }
+    }
+    
+    func logUserIn() {
+        if (self.usernameTF.text == "user@user.com") && (self.passwordTF.text == "user123") {
+            infoDialog(title: "", message: "Welcome yow")
+        }else {
+            errorDiaglog(title: "", message: "Please enter a valid username and password.")
+        }
+    }
+    
+    func errorDiaglog(title: String, message: String){
+        
+        let appearance = SCLAlertView.SCLAppearance(
+            showCircularIcon: true,
+            buttonCornerRadius: 18.0
+        )
+        
+        let alertView = SCLAlertView(appearance: appearance)
+        alertView.showError(title, subTitle: message, closeButtonTitle: "Ok", colorStyle: 0xdd1c1a)
+    }
+    
+    func infoDialog(title:String, message:String) {
+        let appearance = SCLAlertView.SCLAppearance(
+            showCircularIcon: true,
+            buttonCornerRadius: 18.0
+        )
+        
+        let alertView = SCLAlertView(appearance: appearance)
+        alertView.showInfo(title, subTitle: message, closeButtonTitle: "Ok", colorStyle: 0x04BBBF)
     }
 }

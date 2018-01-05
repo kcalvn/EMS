@@ -15,6 +15,8 @@
 		0E0199D91FFE8D9E0072C748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0199D71FFE8D9E0072C748 /* LaunchScreen.storyboard */; };
 		0E0199E21FFE96A90072C748 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0199E11FFE96A90072C748 /* CustomTextField.swift */; };
 		0E0199E41FFE96B80072C748 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0199E31FFE96B80072C748 /* CustomUIButton.swift */; };
+		0E578EC51FFFCFFB008ACF84 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E578EC31FFFCFFA008ACF84 /* SCLAlertView.swift */; };
+		0E578EC61FFFCFFB008ACF84 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E578EC41FFFCFFB008ACF84 /* SCLExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0E0199DA1FFE8D9E0072C748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E0199E11FFE96A90072C748 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0E0199E31FFE96B80072C748 /* CustomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		0E578EC31FFFCFFA008ACF84 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		0E578EC41FFFCFFB008ACF84 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			children = (
 				0E0199E11FFE96A90072C748 /* CustomTextField.swift */,
 				0E0199E31FFE96B80072C748 /* CustomUIButton.swift */,
+				0E578EC71FFFD002008ACF84 /* SCLAlertView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +92,15 @@
 				0E0199CD1FFE8D9E0072C748 /* LoginVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E578EC71FFFD002008ACF84 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				0E578EC31FFFCFFA008ACF84 /* SCLAlertView.swift */,
+				0E578EC41FFFCFFB008ACF84 /* SCLExtensions.swift */,
+			);
+			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E0199E41FFE96B80072C748 /* CustomUIButton.swift in Sources */,
+				0E578EC61FFFCFFB008ACF84 /* SCLExtensions.swift in Sources */,
 				0E0199E21FFE96A90072C748 /* CustomTextField.swift in Sources */,
 				0E0199D41FFE8D9E0072C748 /* EMS.xcdatamodeld in Sources */,
 				0E0199CE1FFE8D9E0072C748 /* LoginVC.swift in Sources */,
+				0E578EC51FFFCFFB008ACF84 /* SCLAlertView.swift in Sources */,
 				0E0199CC1FFE8D9E0072C748 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
