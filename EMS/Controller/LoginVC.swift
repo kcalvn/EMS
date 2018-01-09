@@ -57,9 +57,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         moveDown()
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+
+
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.activeTextField = textField
@@ -73,7 +72,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 
     @IBAction func signInAction(_ sender: UIButton) {
         view.endEditing(true)
-        logUserIn()
+        //logUserIn()
+        performSegue(withIdentifier: "toHomePage", sender: nil)
     }
     
     @IBAction func forgotPasswordAction(_ sender: UIButton) {
@@ -107,6 +107,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     func logUserIn() {
         if (self.usernameTF.text == "user@user.com") && (self.passwordTF.text == "user123") {
             infoDialog(title: "", message: "Welcome yow")
+            performSegue(withIdentifier: "toHomePage", sender: nil)
         }else {
             errorDiaglog(title: "", message: "Please enter a valid username and password.")
         }

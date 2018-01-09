@@ -17,9 +17,9 @@
 		0E0199E41FFE96B80072C748 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0199E31FFE96B80072C748 /* CustomUIButton.swift */; };
 		0E578EC51FFFCFFB008ACF84 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E578EC31FFFCFFA008ACF84 /* SCLAlertView.swift */; };
 		0E578EC61FFFCFFB008ACF84 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E578EC41FFFCFFB008ACF84 /* SCLExtensions.swift */; };
-		0EC4231B2003F2CA00232980 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4231A2003F2CA00232980 /* HomeVC.swift */; };
-		0EC4231D2003F30C00232980 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4231C2003F30C00232980 /* HomeHeaderView.swift */; };
-		0EC4231F2003F86800232980 /* HomeButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4231E2003F86800232980 /* HomeButtonCell.swift */; };
+		0EC423212004013800232980 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC423202004013800232980 /* HomeVC.swift */; };
+		0EC4232320040A3C00232980 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4232220040A3C00232980 /* SquareButton.swift */; };
+		0EC423252004269900232980 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC423242004269900232980 /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		0E0199E31FFE96B80072C748 /* CustomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		0E578EC31FFFCFFA008ACF84 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		0E578EC41FFFCFFB008ACF84 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
-		0EC4231A2003F2CA00232980 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		0EC4231C2003F30C00232980 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
-		0EC4231E2003F86800232980 /* HomeButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonCell.swift; sourceTree = "<group>"; };
+		0EC423202004013800232980 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0EC4232220040A3C00232980 /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
+		0EC423242004269900232980 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,7 @@
 			children = (
 				0E0199E11FFE96A90072C748 /* CustomTextField.swift */,
 				0E0199E31FFE96B80072C748 /* CustomUIButton.swift */,
+				0EC4232220040A3C00232980 /* SquareButton.swift */,
 				0E578EC71FFFD002008ACF84 /* SCLAlertView */,
 			);
 			path = View;
@@ -96,9 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				0E0199CD1FFE8D9E0072C748 /* LoginVC.swift */,
-				0EC4231A2003F2CA00232980 /* HomeVC.swift */,
-				0EC4231C2003F30C00232980 /* HomeHeaderView.swift */,
-				0EC4231E2003F86800232980 /* HomeButtonCell.swift */,
+				0EC423202004013800232980 /* HomeVC.swift */,
+				0EC423242004269900232980 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,13 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EC4231F2003F86800232980 /* HomeButtonCell.swift in Sources */,
+				0EC423252004269900232980 /* ProfileVC.swift in Sources */,
 				0E0199E41FFE96B80072C748 /* CustomUIButton.swift in Sources */,
-				0EC4231B2003F2CA00232980 /* HomeVC.swift in Sources */,
+				0EC423212004013800232980 /* HomeVC.swift in Sources */,
 				0E578EC61FFFCFFB008ACF84 /* SCLExtensions.swift in Sources */,
-				0EC4231D2003F30C00232980 /* HomeHeaderView.swift in Sources */,
 				0E0199E21FFE96A90072C748 /* CustomTextField.swift in Sources */,
 				0E0199D41FFE8D9E0072C748 /* EMS.xcdatamodeld in Sources */,
+				0EC4232320040A3C00232980 /* SquareButton.swift in Sources */,
 				0E0199CE1FFE8D9E0072C748 /* LoginVC.swift in Sources */,
 				0E578EC51FFFCFFB008ACF84 /* SCLAlertView.swift in Sources */,
 				0E0199CC1FFE8D9E0072C748 /* AppDelegate.swift in Sources */,
