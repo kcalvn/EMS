@@ -19,7 +19,7 @@
 		0E578EC61FFFCFFB008ACF84 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E578EC41FFFCFFB008ACF84 /* SCLExtensions.swift */; };
 		0EC423212004013800232980 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC423202004013800232980 /* HomeVC.swift */; };
 		0EC4232320040A3C00232980 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC4232220040A3C00232980 /* SquareButton.swift */; };
-		0EC423252004269900232980 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC423242004269900232980 /* ProfileVC.swift */; };
+		0EE6023A20069BA600EF7185 /* ProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE6023920069BA600EF7185 /* ProfileTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		0E578EC41FFFCFFB008ACF84 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 		0EC423202004013800232980 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0EC4232220040A3C00232980 /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
-		0EC423242004269900232980 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		0EE6023920069BA600EF7185 /* ProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			children = (
 				0E0199CD1FFE8D9E0072C748 /* LoginVC.swift */,
 				0EC423202004013800232980 /* HomeVC.swift */,
-				0EC423242004269900232980 /* ProfileVC.swift */,
+				0EE6023920069BA600EF7185 /* ProfileTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EC423252004269900232980 /* ProfileVC.swift in Sources */,
+				0EE6023A20069BA600EF7185 /* ProfileTVC.swift in Sources */,
 				0E0199E41FFE96B80072C748 /* CustomUIButton.swift in Sources */,
 				0EC423212004013800232980 /* HomeVC.swift in Sources */,
 				0E578EC61FFFCFFB008ACF84 /* SCLExtensions.swift in Sources */,
